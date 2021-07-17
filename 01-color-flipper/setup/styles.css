@@ -73,12 +73,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
+
 h1,
 h2,
 h3,
@@ -156,6 +151,16 @@ main {
 Nav
 ===============
 */
+ul {
+  list-style-type: none;
+  display: inline-flex;
+  font-family: var(--ff-secondary);
+  letter-spacing: var(--spacing);
+  color: var(--clr-primary-5);
+  font-weight: 700;
+  font-size: 16px;
+}
+
 nav {
   background: var(--clr-white);
   height: 3rem;
@@ -163,29 +168,28 @@ nav {
   align-items: center;
   box-shadow: var(--dark-shadow);
 }
-.nav-center {
-  width: 90vw;
-  max-width: var(--fixed-width);
-  margin: 0 auto;
+
+.nav-bar{
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-.nav-center h4 {
-  margin-bottom: 0;
-  color: var(--clr-primary-5);
-}
-.nav-links {
-  display: flex;
-}
-nav a {
-  text-transform: capitalize;
+  margin-left: 4rem;
+  align-items: center;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 17px;
+}
+span{
+  margin-right: 3rem;
+}
+nav a{
+  text-decoration: none;
+  font-family: var(--ff-secondary);
   color: var(--clr-primary-1);
   letter-spacing: var(--spacing);
+  font-weight: 700;
+  font-size: 1rem;
   margin-right: 1rem;
 }
+
 nav a:hover {
   color: var(--clr-primary-5);
 }
